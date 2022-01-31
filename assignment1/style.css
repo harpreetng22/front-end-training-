@@ -1,0 +1,35 @@
+
+h1 {
+    text-align: center;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 0.5%;
+    padding: 1vmax;
+    max-width: 90%;
+    margin: 1vmax;
+  }
+
+img + figcaption {
+    text-align: center;
+    max-width: 90%;
+    
+
+}
+ 
+.it {
+    font-style: italic;
+}
+.top{
+    text-align: center;
+
+}
+.box {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+     max-width: 90vw;
+     background-color: whitesmoke;
+     margin-left: 5vw;
+}

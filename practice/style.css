@@ -1,0 +1,26 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.container {
+width: 400px;
+border: 1px solid red;
+display: flex;
+
+}
+.box  {
+    width: 100px;
+    border: 1px solid blue;
+}
+
+@media screen and (max-width:400px) {
+
+    .container{
+        flex-direction: column;
+    }
+    .box {
+        width: 100%;
+    }
+}
