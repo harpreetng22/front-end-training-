@@ -14,11 +14,15 @@
 
  display: flex;
  background-size:cover;                     
- 
- 
- 
+
 }
 
+.boxwrap
+{ 
+ display: flex;
+ background-size:cover;                     
+
+}
 .f1box{
     width: 25%;
     height: 31vw;
@@ -315,6 +319,10 @@ padding:1vw;
     display: block;
     margin-bottom: 2vw;
 }
+.br3 {
+    display: block;
+    margin-bottom: 2vw;
+}
 
 #t12
 {
@@ -337,6 +345,10 @@ padding:1vw;
 .br1 {
     display: block;
     margin-bottom: 5vw;
+}
+.br2 {
+    display: block;
+    margin-bottom: 0vw;
 }
 #nestforcenter
 {   display: flex;
@@ -382,12 +394,13 @@ padding:1vw;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 
     
 }
 .cell
 {
-    width: 33%;
+    width: 100%;
    
 }
 .cell >img{
@@ -399,6 +412,7 @@ padding:1vw;
 .txt
 {
     width: 32%;
+    justify-content: center;
    
 
 }
@@ -431,13 +445,210 @@ padding:1vw;
     .box{
         flex-direction: column;
     }
+    .boxwrap
+    { 
+        flex-wrap: wrap;                  
+
+    }
     .f1box{
-        width: 100vw;
-        height: 41.66vw;
+        width: 50vw;
+        height: 50vw;
         overflow: hidden;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
     }
     .fbox{
         width: 100vw;
-        height: 62vw;
+        height:85vw;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
     }
+    .flxbox
+    {
+        flex-direction: column;
+    }
+    
+
+#box1
+{   
+    background-image: url("images/mobile/image-header.jpg");
+    height: 150vw;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  
+} 
+#fbox1{height: 115vw;}
+#fbox2
+{
+    background-image: url("images/mobile/image-transform.jpg");
+ }
+#fbox3
+{
+    background-image: url("images/mobile/image-stand-out.jpg");
+   }
+#fbox4{height: 115vw;}
+#fbox5
+{
+    background-image: url("images/mobile/image-graphic-design.jpg");
+    height: 160vw;
+}
+
+#fbox6
+{
+    background-image: url("images/mobile/image-photography.jpg");
+     height: 160vw;
+}
+
+#fbox7
+{
+    background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+   
+}
+#fbox8
+{
+    background-image: url("images/mobile/image-gallery-orange.jpg");
+    
+}
+#fbox9
+{
+    background-image: url("images/mobile/image-gallery-cone.jpg");
+     
+}
+#fbox10
+{
+    background-image: url("images/mobile/image-gallery-sugar-cubes.jpg");
+     
+} 
+
+#box2{display:flex;flex-direction: column-reverse;}
+/* text stling */
+
+#innerbox1
+{ 
+    width: 90%;
+    height: 90%;
+    padding: 5vw;  
+}
+#t1{
+    height: 5vw;
+    font-size: 5vw;
+}
+#t3{
+   font-size: 5vw
+}
+
+#t2{display: none;}
+
+
+#t3 >img{
+ width: 10%;
+ height: 32%;
+ font-size: .5em;
+}
+.innerfbox1{padding-left:10%;
+    padding-right:10%;
+    width: 80%;
+    height: 125vw; }
+.ft
+{   text-align: center;font-size: 4vw;}
+.br2 {
+    display: block;
+    margin-bottom: 25vw;
+}
+.br1 {margin-bottom: 12.5vw;}
+.br3 {margin-bottom: 4vw;}
+.ft > h1
+{ text-align: center;}
+
+
+.innerfbox2
+{
+    padding-top: 100% ;
+    padding-left:10%;
+    padding-right:10%;
+    width: 80%;
+}
+.f1t{
+    font-size: 4vw;
+}
+
+.f1t > h1
+{   font-size: 2em;  
+}
+
+#box5
+{
+    
+    width: 100%;
+    height: 320vw;
+}
+
+
+#innerbox5
+{
+    font-size: 4vw;
+}
+ 
+.ft5 > h1
+{
+    font-size: 4vw;
+}
+
+.flxbox
+{ 
+    height: 110%;
+}
+.cell >img{
+    width: 18vw;
+}
+
+.txt
+{
+    width: 100%;
+    height: 33%;   
+}
+
+.txt > h1
+{
+    width: 100%;
+    letter-spacing: 0.2em; 
+    font-size: 4vw;
+}
+
+.br{margin-bottom: 12.5vw;}
+
+#box7{height: 90vw;}
+.innerfbox3
+{
+    padding-top: 20%;
+    padding-left:10%;
+    padding-right:0%;
+    width: 80%; 
+    height: 80%;
+}
+#t11
+{
+    font-size:10vw;
+}
+#t13
+{
+    width: 80%;
+}
+ 
+.itm >img{
+    width: 5vw;
+   }
+
+
+#nestforcenter
+{   display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+
 } 
