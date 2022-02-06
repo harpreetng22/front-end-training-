@@ -90,13 +90,19 @@ h1{
     line-height: .5vw;
     margin-bottom: .5vw;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between ;
     align-items: center;
     border: 2px solid #555555;
+    overflow-y: auto;
 }
 
+li > #text
+{   
+    min-width: 200%;
+}
 .list >li > .button1
-{
+{   
+    
     visibility: hidden;
 }
 .list >li:hover > .button1
@@ -110,6 +116,17 @@ h1{
     justify-content: center;
 }
 
+.update
+{
+    
+    width: 100%;
+    height: 3vw;
+    /*display: flex;*/
+    justify-content: space-between;
+    display: none;
+    
+
+}
 @media screen and (max-width:480px) 
 {
     *
@@ -134,5 +151,14 @@ h1{
 h1 
 {   
     font-size: 8vw
+}
+
+.update
+{
+ 
+    height: 8vw;
+    /*display: flex;*/
+    
+
 }
 };

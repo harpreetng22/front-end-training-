@@ -12,6 +12,7 @@ function fun()
     newEle=parent.lastElementChild;
     let liId= "li"+count
     newEle.setAttribute("id",liId);
+
     let newbtn=document.createElement("button");
     newbtn.textContent="Delete";
     newEle.appendChild(newbtn);
@@ -20,9 +21,17 @@ function fun()
     newbtn.setAttribute("type","button");
     newbtn.setAttribute("class","button1");
     newbtn.setAttribute("onClick","fun1(this.id)");
+    
+    newbtn=document.createElement("button");
+    newbtn.textContent="update";
+    newEle.appendChild(newbtn);
+    newbtn=newEle.lastChild;
+    newbtn.setAttribute("id",count);
+    newbtn.setAttribute("type","button");
+    newbtn.setAttribute("class","button1");
+    newbtn.setAttribute("onClick","fun2(this.id)");
     count++;
     console.log(newEle);
-
 }
 
 const btn=document.getElementById("add");
@@ -54,3 +63,40 @@ btnAll.addEventListener("click",(button)=>
     }
 })
 
+//update
+
+// fun3=(list,text1)=>{
+
+//     let newEle=document.createElement("li");
+//     newEle.textContent=text1;
+//     list.replaceChild(newEle,list.childNodes[0]);
+//     console.log(list.firstChild)
+// }
+
+
+fun2=(thisId)=>{
+    let btnToUpdate=document.getElementById(thisId);
+    let listToUpdate=document.getElementById("li"+thisId);
+    let txtToUpdate=listToUpdate.textContent.slice(0,-12);
+    let doneBtn=document.getElementById("update");
+    console.log(doneBtn)
+    let input=document.getElementById("up");
+    input.defaultValue =txtToUpdate;
+    console.log(listToUpdate.firstChild)
+    document.getElementsByClassName("update")[0].style.display="flex";
+
+   
+    doneBtn.addEventListener("click",(button)=>
+    {
+        button.preventDefault();
+        let newEle=document.createElement("li");
+        newEle.textContent=document.getElementById("up").value;
+        console.log(newEle)
+        listToUpdate.replaceChild(newEle,listToUpdate.firstChild);
+        console.log(listToUpdate.firstChild)
+        document.getElementsByClassName("update")[0].style.display="none";
+        
+    })
+
+   
+  }
