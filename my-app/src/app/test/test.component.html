@@ -1,0 +1,9 @@
+
+<table>
+    <tr>
+      <th>Color</th>
+    </tr>
+    <tr *ngFor="let color of num">
+      <td [ngStyle]="{'background-color':color}">{{color}}</td>
+    </tr>
+  </table>
