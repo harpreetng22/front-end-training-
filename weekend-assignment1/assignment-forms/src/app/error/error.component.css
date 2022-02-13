@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-size: border-box;
+    font-size: 1.2vw sans-serif;
+    
+}
+.box
+{
+    background-color: #fe7e72;
+    height: 100vh;
+    width: 100vw;
+    
+}
+.in
+{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url("src/assets/bg-intro-desktop.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    width: 50%;
+    
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+   
+
+}
+
+.box1> h1
+{
+    width: 80%;
+    font: 4em sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}

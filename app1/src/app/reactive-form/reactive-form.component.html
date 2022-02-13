@@ -1,0 +1,21 @@
+
+<form action="" [formGroup]="login" (ngSubmit)="onSubmit()">
+    <label for="">Enter frist name</label>
+    <input type="text" formControlName="fname">
+    
+    <br><br>
+    <label for="">Enter last name</label>
+    <input type="text" formControlName="lname">
+    <br><br>
+    <label for="">Enter age</label>
+    <input type='number' formControlName="age">
+    <br><br>
+    <label for="">Enter address</label>
+    <br> <div [formGroup]="login.value.address" (ngSubmit)="onSubmitAdd()">
+    <label for="">state</label>
+   
+    <input  type='text' formControlName="state"></div>
+    <br><br>
+
+    <button type="submit" >Submit</button>
+</form>

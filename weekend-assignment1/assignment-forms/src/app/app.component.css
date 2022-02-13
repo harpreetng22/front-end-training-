@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    background-color: #5d54a3;
+    box-shadow: 0px 1vh #da6667;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    align-items: center;
+}
