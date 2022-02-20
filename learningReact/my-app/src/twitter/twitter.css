@@ -1,0 +1,30 @@
+body{
+    background-color: azure;
+}
+.container{
+    border: 1px solid black;
+    width: 350px;
+    border-radius: 7px;
+    padding: 7px;
+    margin: 15px;
+    background-color: white;
+    color: rgb(28, 110, 177);
+}
+/* Section One */
+.section-one{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+    padding: 5px;
+
+}
+/* Action */
+.action{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+    padding: 5px;
+}
+

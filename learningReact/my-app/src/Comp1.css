@@ -1,0 +1,36 @@
+/* .flex{
+    display:flex;
+width:18vw;
+
+justify-content: space-between;
+font-size: 1.2vw;
+align-items: center;
+font-family: sans-serif;
+padding: 1vw;
+background-color:#edeef5;
+border-radius: 5%;
+}
+.logo{
+ width: 4vw;
+ height: 4vw;
+ border-radius: 5%;
+ background-color: #21b2fd;
+ color: aliceblue;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+.item1{
+    font-size: 110%;
+    font-weight: 900;
+    color:#67748e;
+}
+.item2{
+    font-size: 140%;
+    font-weight: 900;
+}
+span{
+    font-size: 70%;
+    color: rgb(92, 223, 114);
+} */
