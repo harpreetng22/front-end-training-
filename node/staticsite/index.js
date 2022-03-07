@@ -17,13 +17,33 @@
 
 // });
 
-const express=require('express');
-const greet=require('./product.js');
-const app=express();
+// const express=require('express');
 
-app.use(greet);
+// const app=express();
+// const {greet,greetmsg}=require('./product.js');
+// app.use(greet);
+// app.use(greetmsg);
+
+
+// app.get('/',(req,res)=>{
+//     res.send("get");
+// })
+// app.listen(4001);const express=require('express');
+
+const express=require('express');
+const app=express();
+const products=require('./product.js');
+const user=require('./user.js');
+
+app.use(express.static('./static'));
+
+app.use('/products',products);
+app.use('/user',user);
+
+
+
 
 app.get('/',(req,res)=>{
-    res.send("get");
+    res.sendFile(`${__dirname}/static/home.html`);
 })
-server.listen(4001);
+app.listen(4001);
